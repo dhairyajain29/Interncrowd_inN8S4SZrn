@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_light"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/general_quiz"
+            android:textColor="@color/pink_700"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/separateLine0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/separateLine0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/pink_700"
+            app:layout_constraintBottom_toTopOf="@+id/first_question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+        <!-- first question -->
+
+        <TextView
+            android:id="@+id/first_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_first"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintBottom_toTopOf="@+id/first_radio_group"
+            tools:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/pink_700"
+            />
+
+        <RadioGroup
+            android:id="@+id/first_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/first_question"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first_first_answer"
+                android:textSize="14sp"
+                android:textColor="@color/pink_600"
+                android:buttonTint="@color/pink_500"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first_second_answer"
+                android:textSize="14sp"
+                android:textColor="@color/pink_600"
+                android:buttonTint="@color/pink_500"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first_third_answer"
+                android:textSize="14sp"
+                android:textColor="@color/pink_600"
+                android:buttonTint="@color/pink_500"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_first_fourth_answer"
+                android:textSize="14sp"
+                android:textColor="@color/pink_600"
+                android:buttonTint="@color/pink_500"
+                />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/separateLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/pink_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_radio_group" />
+
+        <!-- second question -->
+        <TextView
+            android:id="@+id/second_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/question_second"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/separateLine1"
+            tools:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingEnd="16dp"
+            tools:ignore="RtlSymmetry"
+            android:lineSpacingExtra="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/pink_700"
+            android:paddingRight="16dp" />
+
+        <RadioGroup
+            android:id="@+id/second_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/second_question">
+
+            <RadioButton
+                android:id="@+id/second_radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_second_first_answer"
+                android:textSize="14sp"
+                android:buttonTint="@color/pink_500"
+                android:textColor="@color/pink_600"
+                />
+
+            <RadioButton
+                android:id="@+id/second_radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_second_second_answer"
+                android:textSize="14sp"
+                android:buttonTint="@color/pink_500"
+                android:textColor="@color/pink_600"
+                />
+
+            <RadioButton
+                android:id="@+id/second_radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_second_third_answer"
+                android:textSize="14sp"
+                android:buttonTint="@color/pink_500"
+                android:textColor="@color/pink_600"
+                />
+
+            <RadioButton
+                android:id="@+id/second_radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_second_fourth_answer"
+                android:textSize="14sp"
+                android:buttonTint="@color/pink_500"
+                android:textColor="@color/pink_600"
+                />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/separateLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/pink_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second_radio_group" />
+
+        <!-- third question -->
+        <TextView
+            android:id="@+id/third_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/question_third"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/separateLine2"
+            tools:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingEnd="16dp"
+            tools:ignore="RtlSymmetry"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="20dp"
+            android:textColor="@color/pink_700"
+            android:paddingRight="16dp" />
+
+        <EditText
+            android:id="@+id/third_question_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/write_answer"
+            android:inputType="textCapWords"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/third_question"
+            android:importantForAutofill="no"
+            android:backgroundTint="@color/pink_500"
+            android:textColor="@color/pink_600"
+            android:textCursorDrawable="@null"/>
+
+        <View
+            android:id="@+id/separateLine3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/pink_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/third_question_user_input" />
+
+        <!-- fourth question -->
+
+        <TextView
+            android:id="@+id/fourth_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/question_fourth"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/separateLine3"
+            tools:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingEnd="20dp"
+            tools:ignore="RtlSymmetry"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="20dp"
+            android:textColor="@color/pink_700"
+            android:paddingRight="20dp" />
+
+        <CheckBox
+            android:id="@+id/fourth_checkbox1"
+            android:text="@string/question_fourth_first_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_question"
+            android:textSize="14sp"
+            android:buttonTint="@color/pink_500"
+            android:textColor="@color/pink_600" />
+
+        <CheckBox
+            android:id="@+id/fourth_checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_fourth_second_answer"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_checkbox1"
+            android:textSize="14sp"
+            android:buttonTint="@color/pink_500"
+            android:textColor="@color/pink_600"/>
+
+        <CheckBox
+            android:id="@+id/fourth_checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_fourth_third_answer"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_checkbox2"
+            android:textSize="14sp"
+            android:buttonTint="@color/pink_500"
+            android:textColor="@color/pink_600"/>
+
+        <CheckBox
+            android:id="@+id/fourth_checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_fourth_fourth_answer"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_checkbox3"
+            android:textSize="14sp"
+            android:buttonTint="@color/pink_500"
+            android:textColor="@color/pink_600"/>
+
+        <CheckBox
+            android:id="@+id/fourth_checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_fourth_fifth_answer"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_checkbox4"
+            android:textSize="14sp"
+            android:buttonTint="@color/pink_500"
+            android:textColor="@color/pink_600"/>
+
+        <View
+            android:id="@+id/separateLine4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/pink_700"
+            app:layout_constraintBottom_toTopOf="@+id/submit_answer_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourth_checkbox5" />
+
+
+        <Button
+            android:id="@+id/submit_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/separateLine4"
+            android:onClick="submitAnswer"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

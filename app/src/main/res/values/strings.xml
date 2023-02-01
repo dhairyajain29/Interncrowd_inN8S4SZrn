@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="general_quiz">General Quiz</string>
+    <string name="question_first">1. What is regression?</string>
+    <string name="question_second">2. When having a problem, it is best to dissect the situation, then act. Dissect means…?</string>
+    <string name="question_third">3. In Android, which class is used to create a multiple-exclusion scope for a set of radio buttons?</string>
+    <string name="question_fourth">4. From top-left, moving clockwise, what are the four colours/colors in the MSWindows flag logo (as in Windows 7)?
+ </string>
+    <string name="question_first_first_answer">Going back to the original stage</string>
+    <string name="question_first_second_answer">re-do something</string>
+    <string name="question_first_third_answer">retreat</string>
+    <string name="question_first_fourth_answer">rediscovery</string>
+
+    <string name="question_second_first_answer">Control</string>
+    <string name="question_second_second_answer">Discuss</string>
+    <string name="question_second_third_answer">Ignore</string>
+    <string name="question_second_fourth_answer">Analyze</string>
+
+    <string name="question_fourth_first_answer">Yellow</string>
+    <string name="question_fourth_second_answer">Green</string>
+    <string name="question_fourth_third_answer">purple</string>
+    <string name="question_fourth_fourth_answer">Blue</string>
+    <string name="question_fourth_fifth_answer">Red</string>
+    <string name="submit">submit answer</string>
+    <string name="write_answer">Write answer here</string>
+    <string name="Toast_message_header">"Score : You have reached "</string>
+    <string name="toastMessageTail">" of 4 points."</string>
+</resources>

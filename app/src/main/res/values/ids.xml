@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="app_title" type="id"> </item>
+    <item name="first_question" type="id"> </item>
+    <item name="first_radio_group" type="id"> </item>
+    <item name="radioButton1" type="id"> </item>
+    <item name="radioButton2" type="id"> </item>
+    <item name="radioButton3" type="id"> </item>
+    <item name="radioButton4" type="id"> </item>
+    <item name="second_question" type="id"> </item>
+    <item name="second_radio_group" type="id"> </item>
+    <item name="second_radioButton1" type="id"> </item>
+    <item name="second_radioButton2" type="id"> </item>
+    <item name="second_radioButton3" type="id"> </item>
+    <item name="second_radioButton4" type="id"> </item>
+    <item name="third_question" type="id"> </item>
+    <item name="third_question_user_input" type="id"> </item>
+    <item name="fourth_question" type="id"> </item>
+    <item name="fourth_radio_group" type="id"> </item>
+    <item name="fourth_radioButton1" type="id"> </item>
+    <item name="fourth_radioButton2" type="id"> </item>
+    <item name="fourth_radioButton3" type="id"> </item>
+    <item name="fourth_radioButton4" type="id"> </item>
+</resources>
